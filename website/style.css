@@ -1,0 +1,117 @@
+body {
+  background: #fffff8;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 10px;
+  padding: 0;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-image: 
+    /* top, transparent red */ linear-gradient(
+      rgba(0, 110, 255, 0.45),
+      rgba(253, 104, 129, 0.89)
+    ),
+    /* your image */ url("./back\ \(2\).png");
+}
+
+#main > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#main {
+  height: 100vh;
+
+  width: 100%;
+  color: rgb(236, 247, 82);
+  justify-content: center;
+
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.entry {
+  background: rgba(67, 95, 155, 0.4);
+  width: 100%;
+  border: 1px solid black;
+  color: aliceblue;
+}
+.title {
+  padding: 5px 0;
+  color: rgb(80, 87, 150);
+  text-align: center;
+}
+
+.weather {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.column > div {
+  height: 50vh;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 27px;
+}
+
+input,
+select {
+  display: block;
+  height: 60px;
+  width: 80%;
+  background: #22b2da;
+  color: black;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  opacity: 80%;
+}
+
+button {
+  margin-top: 20px;
+  width: 80%;
+  height: 100px;
+  background: #3b4a6b;
+  color: #f0d43a;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+}
+h1 {
+  font-size: 36px;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="layer">
+  <div id="main">
+    <div class="column">
+
+    
+    <div class="holder zip">
+      <h1>Check out today's weather</h1>
+      <form>
+        <h2>
+          Select city from a list
+        </h2>
+          
+          <select name="cities" id="zip-cities">
+            <option value="" disabled selected>Select City</option>
+            <option value="10001">New-york: 10001</option>
+            <option value="48084">Michigan: 48084</option>
+            <option value="90001">Los-Angeles: 90001</option>
+          </select>
+          <p>
+            Or choose from a valid US Cities and Zip Codes list:
+
+            <a href="https://www.phaster.com/zip_code.html" target="_blank"
+              >here</a
+            >
+          </p>
+
+          <label for="zip">Select city via Zipcode</label>
+          <input type="text" id="zip" placeholder="Enter US Zip Code here" />
+        
+        <div class="holder feel">
+          <label for="feelings">What do you wish to accomplish today?</label>
+          <input
+            class="myInput"
+            id="thougts"
+            placeholder="Write It Down, Make It Happen..."
+           
+          ></input>
+          <button id="generate" type="submit">Request a Forcast</button>
+       
+      </form>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="weather entry">
+      <div class="title">Today's Weather...</div>
+      <div id="entryHolder"></div>
+    
+  </div>
+  </div>
+    
+  </div>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
